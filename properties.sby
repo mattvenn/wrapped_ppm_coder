@@ -1,0 +1,14 @@
+[options]
+mode prove
+
+[engines]
+smtbmc
+
+[script]
+read -formal wrapper.v PPM_Coder_v2.1.v
+prep -top wrapped_ppm_coder
+
+[files]
+wrapper.v
+properties.v
+PPM-FPGA-to-ASIC-WMX/Coder_4_8_Ch/src/verilog/PPM_Coder_v2.1.v

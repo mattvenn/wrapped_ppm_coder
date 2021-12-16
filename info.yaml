@@ -1,0 +1,47 @@
+--- 
+# information
+project: 
+  title: "PPM Coder"
+  description: "Fuentes Codificador PPM configurable"
+  picture: docs/PPM_Codec4_8ch.png
+  author: "Llorens_MRC"
+  license: LICENSE
+  waive_caravel: "no caravel test"
+
+# optional interfaces you want to use: gpio, la1, la2, la3, irq, clk2 & wishbone
+interfaces: ['gpio']
+
+# test within caravel
+caravel_test:
+  recipe: "coco_test"
+  directory: "caravel_test"
+  id: 1
+  module_name: "wrapped_project"
+  instance_name: "wrapped_project"
+
+# module test
+module_test:
+  recipe: "all" 
+  directory: "."
+  makefile: "Makefile"
+
+# run the wrapper formal proof
+wrapper_proof:
+  directory: "."
+  sby: "properties.sby"
+
+# openlane config, used in case I need to re-harden
+openlane:
+  config: "config.tcl"
+
+# source required for various configs and module instantiation
+source:
+    - wrapper.v
+    - PPM-FPGA-to-ASIC-WMX/Coder_4_8_Ch/src/verilog/PPM_Coder_v2.1.v
+
+# gds - check nothing on metal 5, DRC & LVS
+gds:
+  directory: "gds"
+  gds_filename: "wrapped_ppm_coder.gds"
+  lvs_filename: "wrapped_ppm_coder.lvs.powered.v"
+  lef_filename: "wrapped_ppm_coder.lef"
