@@ -7,23 +7,18 @@ project:
   author: "Llorens_MRC"
   license: LICENSE
   waive_caravel: "no caravel test"
+  waive_module_test: "no module test"
 
 # optional interfaces you want to use: gpio, la1, la2, la3, irq, clk2 & wishbone
 interfaces: ['gpio']
 
 # test within caravel
 caravel_test:
-  recipe: "coco_test"
-  directory: "caravel_test"
-  id: 1
-  module_name: "wrapped_project"
-  instance_name: "wrapped_project"
+  id: 2
+  module_name: "wrapped_ppm_coder"
 
 # module test
 module_test:
-  recipe: "all" 
-  directory: "."
-  makefile: "Makefile"
 
 # run the wrapper formal proof
 wrapper_proof:
