@@ -6,7 +6,7 @@ set ::env(DESIGN_NAME) wrapped_ppm_coder
 
 # add your source files here
 set ::env(VERILOG_FILES) "$::env(DESIGN_DIR)/wrapper.v \
-    $::env(DESIGN_DIR)/PPM-FPGA-to-ASIC-WMX/Coder_4_8_Ch/src/verilog/PPM_Coder_v2.1.v"
+    $::env(DESIGN_DIR)/src/PPM_Coder_v2.1.v"
 
 # target density, change this if you can't get your design to fit
 set ::env(FP_CORE_UTIL) 45
