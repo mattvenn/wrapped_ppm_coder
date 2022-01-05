@@ -2,7 +2,7 @@
 
 * Creación **Codificador (@Llorens_MRC) / Decodificador PPM (@jospicant) de 8 canales**  en FPGA para llevarlo a un ASIC.  
  
-* Agradecer a **Matthew Venn @matthewvenn** por dejarnos participar en el proyecto de **efabless** https://efabless.com/ y ofrecernos la posibilidad de colaborar con un diseño realizado en una FPGA y poderlo migrar a ASIC, gracias a la colaboración de **Google** con **skywater technology** empresa fabricante de semiconductores.**@matthewvenn** nos acoge en la preparación del próximo lanzamiento MPW https://www.zerotoasiccourse.com/post/mpw3/.    
+* Agradecer a **Matthew Venn @matthewvenn** por dejarnos participar en el proyecto de **efabless** https://efabless.com/ y ofrecernos la posibilidad de colaborar con un diseño realizado en una FPGA y poderlo migrar a ASIC, gracias a la colaboración de **Google** con **skywater technology** empresa fabricante de semiconductores.**@matthewvenn** nos acoge en la preparación del próximo lanzamiento MPW4 https://www.zerotoasiccourse.com/post/mpw4_submitted/
 
 * Agradecer al grupo de Telegram en el cual participo **Wide Maker Xperiencies** la acogida en dicho grupo, ser fuente de motivación para mí y seguir aprendiendo con ellos.  
 
